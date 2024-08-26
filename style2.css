@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+     background: rgb(17, 17, 17);
+
+}
+.sentence-wrapper {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.sentence {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: red;
+  opacity: 0;
+  font-size:25px;
+  margin: 20px 0;
+  animation: fadeIn 1s forwards;
+}
+
+/* Apply delay to each sentence using nth-child */
+.sentence:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.sentence:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.sentence:nth-child(3) {
+  animation-delay: 4s;
+}
+
+.sentence:nth-child(4) {
+  animation-delay: 6s;
+}
+.sentence:nth-child(5) {
+  animation-delay: 8s;
+}
+
+.sentence:nth-child(6) {
+  animation-delay: 10s;
+}
+
+.sentence:nth-child(7) {
+  animation-delay: 12s;
+}
+
+.sentence:nth-child(8) {
+  animation-delay: 14s;
+}
+.sentence:nth-child(9) {
+  animation-delay: 16s;
+}
+
+.sentence:nth-child(10) {
+  animation-delay: 18s;
+}
+
+.sentence:nth-child(11) {
+  animation-delay: 20s;
+}
+
+.sentence:nth-child(12) {
+  animation-delay: 22s;
+}
+.sentence:nth-child(13) {
+  animation-delay: 23s;
+}
+
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  } 
+}
+
+.boxi{
+    display: flex;
+    justify-content:center;
+     align-items: center;
+     opacity: 0;
+     animation: you 23s forwards;
+     bottom: 70px;
+}
+@keyframes you{
+  98%{opacity:0;}
+  100%{
+    opacity: 1;
+  }
+}
+.text1{
+    color: red;
+    font-size:110px ;
+}
+.box{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heart {
+    height: 70px;
+    width: 70px;
+    background: red;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px red;
+    animation: heartbeat 0.7s linear infinite;
+}
+
+.heart:before {
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: red;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: -10px -10px 90px red;
+}
+
+.heart:after {
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: red;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 90px red;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: rotate(-45deg) scale(1.1);
+    }
+    80% {
+        transform: rotate(-45deg) scale(0.9);
+    }
+    100% {
+        transform: rotate(-45deg) scale(0.8);
+    }
+}

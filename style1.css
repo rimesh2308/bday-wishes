@@ -1,0 +1,201 @@
+
+
+body{
+    background-image: url('img1.jpg');
+    background-size: cover;        
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height:800px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .box{
+    height:650px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   .container{
+    height:60px;
+    width: 800px;
+    position: absolute;
+    top: 110%;
+    left: 77%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+     justify-content: centre;
+    align-items: centre;
+   } 
+   span{
+    color:#ff8000;
+     display: inline;
+     text-shadow: 2px 2px 4px rgba(82, 71, 71, 0.5); 
+    letter-spacing:5px;
+    font-size: 30px;
+    animation: animate 12s linear forwards;
+    
+   } 
+   @keyframes animate{
+    0%{opacity: 0;
+    }
+    50%{opacity: 0;}
+
+      100%{
+      opacity: 1;
+    }
+   }
+
+  .box2{
+    height: 300px;
+    width: 300px;
+    top:110px;
+    left:-400px;
+    background-color: transparent;
+    margin: 50px;
+    position: relative;
+    animation-name: kao;
+    animation-duration: 7s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    background-image: url('img6.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  .box3{
+    height: 300px;
+    width: 300px;
+    left: 1500px;
+    bottom: 510px;
+    background-color:transparent;
+    background-image: url('img5.jpeg');
+    background-size: cover;
+    margin: 50px;
+    position: relative;
+    animation-name: kao1;
+    animation-duration:7s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+   }
+ 
+  @keyframes kao{
+   0%{
+    transform: translateX(-400px);
+    opacity: 1;
+   }
+   80%{opacity: 1;}
+   100%{
+    transform: translateX(1700px);
+    opacity: 0.1;
+   }
+  }
+  @keyframes kao1{
+    0%{
+     transform:  translateX(400px);
+     opacity: 1;
+    }
+    80%{opacity: 1;}
+    100%{
+     transform: translateX(-1670px);
+     opacity:0.1;
+    }
+   }
+  .click{
+    top:400px;
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+    font-size: 24px;
+    
+
+  }
+  .balloon {
+    width: 100px;
+    position: absolute;
+    bottom: -400px;
+    animation: fly 5s ease-in infinite;
+  }
+  
+  .balloon:nth-child(2) {
+    left:-30%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+  }
+  
+  .balloon:nth-child(3) {
+    left: 70%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+  }
+  .balloon:nth-child(4) {
+    left:-70%;
+    animation-duration: 2s;
+    animation-delay: 2s;
+  }
+  .balloon:nth-child(5) {
+    left: 50%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+  }
+  .balloon:nth-child(6) {
+    left: 110%;
+    animation-duration: 2s;
+    animation-delay: 1s;
+  }
+  .balloon:nth-child(7) {
+    left: 160%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+  }
+  
+  
+  
+  @keyframes fly {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 0.9;
+    }
+    90%{ opacity: 0.8;}
+    100% {
+      transform: translateY(-100vh) scale(1.2);
+      opacity: 0.1;
+    }
+  }
+  .box5{
+    height:500px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color:transparent;
+    background-image: url('img4.jpeg');
+    background-size: cover;
+    animation: love 8s linear forwards;
+  }
+  @keyframes love{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+ .banner{
+  top: 0%;
+  width:100%;
+   height: 250px;
+  animation: banner 10s linear forwards;
+
+ }
+ @keyframes banner {
+  0% {
+    opacity: 0;
+  } 
+  50%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
