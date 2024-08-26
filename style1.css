@@ -4,14 +4,13 @@ body{
     background-image: url('img1.jpg');
     background-size: cover;        
     background-position: center; 
-    background-repeat: no-repeat; 
-    height:800px;
+    background-repeat:repeat; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   .box{
-    height:650px;
+    width:100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -91,7 +90,7 @@ body{
   }
   @keyframes kao1{
     0%{
-     transform:  translateX(400px);
+     transform:  translateX(300px);
      opacity: 1;
     }
     80%{opacity: 1;}
